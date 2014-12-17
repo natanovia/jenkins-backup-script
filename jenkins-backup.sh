@@ -1,11 +1,5 @@
 #!/bin/bash -xe
 
-##################################################################################
-function usage(){
-  echo "usage: $(basename $0) /path/to/jenkins_home archive.tar.gz"
-}
-##################################################################################
-
 readonly JENKINS_HOME=$1
 readonly DIST_FILE=$2
 readonly CUR_DIR=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
